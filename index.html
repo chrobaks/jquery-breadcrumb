@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>Breadcrumb</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div id="breadcrumb"></div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="BreadCrumb.js"></script>
+    <script type="text/javascript">
+        // test data
+        var mock = [
+            {url:'http://thisexample.com', label:'Home'},
+            {url:'http://thisexample.com/level2', label:'Unterseite Level 2'},
+            {url:'http://thisexample.com/level3', label:'Unterseite Level 3'},
+            {url:'http://thisexample.com/level4', label:'Unterseite Level 4'},
+            {url:'http://thisexample.com/level5', label:'Unterseite Level 5'},
+            {url:'http://thisexample.com/level6', label:'Unterseite Level 6'},
+            {url:'http://thisexample.com/level7', label:'Unterseite Level 7'},
+            {url:'http://thisexample.com/level8', label:'Unterseite Level 8'}
+        ];
+
+        $(document).ready( function () {
+            // if document load run init and add
+            BreadCrumb.init({
+                breadcrumb : '#breadcrumb',
+                breadcrumbInput : 'breadcrumbInput'
+            });
+
+            BreadCrumb.add(mock);
+
+        });
+    </script>
+</body>
+</html>

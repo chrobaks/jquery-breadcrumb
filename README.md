@@ -17,7 +17,7 @@ Simple Breadcrumb with Javascript and Jquery
   
 ### desciption  
 
-Dynamic BreadCrump for Pc, Tablet and Smartphone
+Dynamic BreadCrumb for Pc, Tablet and Smartphone
 
 
 
